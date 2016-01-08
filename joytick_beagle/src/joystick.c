@@ -249,7 +249,7 @@ int main() {
   int fd, version, axes=0, buttons=0;
   char name[80];
   struct js_event jse;
-  fd = open_joystick("/dev/input/js1");
+  fd = open_joystick("/dev/input/js0");
 
   ioctl(fd, JSIOCGAXES, &axes);
   ioctl(fd, JSIOCGBUTTONS, &buttons);
